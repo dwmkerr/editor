@@ -1,0 +1,10 @@
+
+Reviewing README.md against Dave's writing style  (gpt-5.6-sol via codex)…
+
+  1  L3   "supercharge your writing"        hype verb (Forbidden) — say what it does
+  2  L7   "This changes everything."        mic-drop / unsupported claim — remove
+  3  L9   "In today's fast-paced world…"    filler opener — delete
+  4  L12  "1. Fast  2. Simple  3. Powerful" numbered unordered list — use bullets
+  5  L15  "warm, not salesy"                X-not-Y aphorism — state it plainly
+
+5 issues, 0 rewrites (review mode). Run without "list" to apply the fixes.

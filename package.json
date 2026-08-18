@@ -1,0 +1,29 @@
+{
+  "name": "editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Edit or review a file against Dave Kerr's writing style, routed through a second model",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmkerr/editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dwmkerr/editor/issues"
+  },
+  "keywords": [
+    "agent-skills",
+    "writing-style",
+    "editing",
+    "review",
+    "coding-agents"
+  ],
+  "author": "Dave Kerr",
+  "license": "MIT"
+}
