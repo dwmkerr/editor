@@ -1,10 +1,15 @@
 
-Reviewing README.md against Dave's writing style  (gpt-5.6-sol via codex)…
+[38;5;208m⏺[0m [1meditor[0m(review qb-scholar.md)
+  [38;5;245m⎿  gpt-5.6-sol via codex · 4 issues · review mode (no changes written)[0m
 
-  1  L3   "supercharge your writing"        hype verb (Forbidden) — say what it does
-  2  L7   "This changes everything."        mic-drop / unsupported claim — remove
-  3  L9   "In today's fast-paced world…"    filler opener — delete
-  4  L12  "1. Fast  2. Simple  3. Powerful" numbered unordered list — use bullets
-  5  L15  "warm, not salesy"                X-not-Y aphorism — state it plainly
+[38;5;240m┌──────────────────────────────────────────────┬──────────────────────────────────────────────┐[0m
+[38;5;240m│[0m [38;5;245mBefore                                      [0m [38;5;240m│[0m [38;5;114mAfter                                       [0m [38;5;240m│[0m
+[38;5;240m├──────────────────────────────────────────────┼──────────────────────────────────────────────┤[0m
+[38;5;240m│[0m "…provoke feedback, not look finished."      [38;5;240m│[0m [38;5;114m"a concrete draft they can review"          [0m [38;5;240m│[0m
+[38;5;240m│[0m "Written for the team, not for circulation." [38;5;240m│[0m [38;5;114m"Keep it internal; give the team context"   [0m [38;5;240m│[0m
+[38;5;240m│[0m "Three deliverables, in priority order:"     [38;5;240m│[0m [38;5;114m"Produce the deliverables in priority order"[0m [38;5;240m│[0m
+[38;5;240m│[0m "Top three, not ten."                        [38;5;240m│[0m [38;5;114m"Limit the page to three commitments"       [0m [38;5;240m│[0m
+[38;5;240m└──────────────────────────────────────────────┴──────────────────────────────────────────────┘[0m
 
-5 issues, 0 rewrites (review mode). Run without "list" to apply the fixes.
+  [38;5;245mRerun without "list/review" to apply the fixes.[0m
+

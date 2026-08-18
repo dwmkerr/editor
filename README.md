@@ -1,4 +1,4 @@
-<img src="./site/assets/hero.gif" alt="A terminal review: the editor lists writing-style issues in a file without rewriting it" width="100%">
+<img src="./site/assets/hero.gif" alt="A Claude Code /editor review showing a before/after table of writing-style fixes" width="100%">
 
 # editor
 
