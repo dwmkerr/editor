@@ -25,3 +25,7 @@ tests:
   - id: negative-slides
     prompt: "Create slides for this project"
     should_trigger: false
+
+  - id: code-comment-review
+    prompt: "use my editor skill to review the comments in this diff"
+    should_trigger: true

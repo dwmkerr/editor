@@ -40,9 +40,13 @@ instructions. The model defaults to `gpt`.
 2. **Write a prompt file.** Write it to the scratchpad directory. Include:
    - The content of `writing-style.md` and `review-examples.md` from this
      skill's `references/` directory.
+   - The content of `code-style.md` when the target is code (source files, or
+     prose that documents code such as comments in a diff).
    - The content of `effective-shell-style.md` only when the instructions
      mention that tone.
-   - The content of the target file.
+   - The content of the target file. For code targets, include the code
+     itself, never extracted comment lines alone: judging a comment needs the
+     code it annotates in view.
    - The user's instructions.
    - This postscript:
 
@@ -55,6 +59,18 @@ instructions. The model defaults to `gpt`.
      > Flag every Forbidden violation with the line, the problem, and a fix.
      > Flag Discouraged patterns where they add noise. Suggest Preferred
      > improvements where they would strengthen the text.
+
+     For code targets in edit mode, append:
+     > Apply the code style rules: remove breadcrumb comments, process
+     > commentary, consumer narration, and assumed backwards compatibility.
+     > Add doc comments to exported types and public fields where you have
+     > high confidence in the contract.
+
+     For code targets in review mode, append:
+     > Apply the code style rules: flag breadcrumb comments, process
+     > commentary, consumer narration, and assumed backwards compatibility.
+     > Suggest doc comments for exported types and public fields that lack
+     > them.
 
 3. **Dispatch.**
    - If model is `claude`, run directly in the current session. No dispatch
