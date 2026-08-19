@@ -61,16 +61,10 @@ instructions. The model defaults to `gpt`.
      > improvements where they would strengthen the text.
 
      For code targets in edit mode, append:
-     > Apply the code style rules: remove breadcrumb comments, process
-     > commentary, consumer narration, and assumed backwards compatibility.
-     > Add doc comments to exported types and public fields where you have
-     > high confidence in the contract.
+     > Apply the code style rules: fix every violation.
 
      For code targets in review mode, append:
-     > Apply the code style rules: flag breadcrumb comments, process
-     > commentary, consumer narration, and assumed backwards compatibility.
-     > Suggest doc comments for exported types and public fields that lack
-     > them.
+     > Flag every code style violation with the line, the problem, and a fix.
 
 3. **Dispatch.**
    - If model is `claude`, run directly in the current session. No dispatch

@@ -73,10 +73,27 @@ godoc - whatever the language tooling reads). Tooling surfaces doc comments
 in hover and generated docs, and they survive refactors that orphan inline
 narration.
 
-**Inline comments.** An inline comment earns its place by stating something
-the code cannot: an invariant, a unit, an ownership rule, a reason this way
-was chosen over the obvious way. If deleting the comment loses nothing, delete
-it.
+**Inline comments.** The code is imperative: it already states what happens.
+A comment earns its place two ways: it explains why (an invariant, a unit, an
+ownership rule, a reason this way was chosen over the obvious way), or it
+explains code that is opaque to its likely reader.
+
+Comment density scales with how hard the code is to read. A typed application
+codebase needs sparse why-comments. A shell script warrants step-by-step
+narration because shell is hard to read - see
+https://github.com/dwmkerr/effective-shell-installer/blob/main/effective.sh
+for the reference example (on the verbose end, and the right register for
+complex code readers may struggle with):
+
+> ```sh
+> # We put everything in braces - this is to ensure we execute only when the
+> # whole script is downloaded.
+> ```
+
+> ```sh
+> # Only set pipefail in bash - dash and other POSIX shells don't support
+> # this option.
+> ```
 
 **Reference the source.** When a rule lives in a spec, link or name the
 spec. Restated numbers and rules drift.
@@ -85,12 +102,16 @@ spec. Restated numbers and rules drift.
 
 For each comment ask:
 
-1. Could a maintainer delete this and lose nothing? Delete it.
-2. Does it describe this code's contract, or its history, its reviewers, or
-   its consumers? Rewrite to the contract or delete.
-3. Is there an exported type or field nearby with no doc comment? Add one.
-4. Does it restate a spec value (a cap, a default, a route) that will drift?
-   Replace with a reference.
+1. Does it explain why, or decode something opaque to the likely reader? If
+   it only restates readable code, delete it.
+2. Does it describe this code, or its history, its reviewers, or its
+   consumers? Rewrite to this code's concern or delete.
+3. Is the comment density right for the code's opacity - narration for shell
+   and other hard-to-read code, sparse why-comments for typed application
+   code?
+4. Is there an exported type or public field nearby with no doc comment?
+5. Does it restate a value another file owns (a cap, a default, a route)
+   that will drift? Replace with a reference.
 
 Review comments with their surrounding code in view, never as extracted
-comment lines: "does this code care?" is unanswerable without the code.
+comment lines: whether code is opaque is unanswerable without the code.
