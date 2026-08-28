@@ -1,0 +1,13 @@
+
+[38;5;208m⏺[0m [1meditor[0m(review qb-scholar.md)
+  [38;5;245m⎿  gpt-5.6-sol via codex · 10 findings · review mode[0m
+
+[38;5;240m┌──────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐[0m
+[38;5;240m│[0m [38;5;245mIssue                                                   [0m [38;5;240m│[0m [38;5;245mFix                                                 [0m [38;5;240m│[0m
+[38;5;240m├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤[0m
+[38;5;240m│[0m "Written for Claude, not for circulation" · X-not-Y     [0m [38;5;240m│[0m [38;5;114mKeep it within the working team.                    [0m [38;5;240m│[0m
+[38;5;240m│[0m "Three deliverables, in priority order:" · count-first  [0m [38;5;240m│[0m [38;5;114mProduce the deliverables in priority order.         [0m [38;5;240m│[0m
+[38;5;240m│[0m "Top three, not ten" · numeric X-not-Y                  [0m [38;5;240m│[0m [38;5;114mLimit the page to the three commitments.            [0m [38;5;240m│[0m
+[38;5;240m│[0m "a scoping document rather than a pitch" · cute label   [0m [38;5;240m│[0m [38;5;114mDefine the work to take on; set limits on the rest. [0m [38;5;240m│[0m
+[38;5;240m└──────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘[0m
+

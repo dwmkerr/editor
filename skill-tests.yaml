@@ -1,0 +1,39 @@
+skill: editor
+model: haiku
+
+tests:
+  - id: invoke-editor
+    prompt: "/editor \"clean this up\""
+    should_trigger: true
+
+  - id: use-my-editor
+    prompt: "use my editor skill to review this file"
+    should_trigger: true
+
+  - id: review-only
+    prompt: "/editor \"don't rewrite, tell me what is wrong\""
+    should_trigger: true
+
+  - id: pick-model
+    prompt: "/editor gpt \"how would you rewrite the skill md\""
+    should_trigger: true
+
+  - id: quick-mode
+    prompt: "/editor quick"
+    should_trigger: true
+
+  - id: wtf-mode
+    prompt: "/editor wtf"
+    should_trigger: true
+
+  - id: negative-code
+    prompt: "Write a function to parse JSON"
+    should_trigger: false
+
+  - id: negative-slides
+    prompt: "Create slides for this project"
+    should_trigger: false
+
+  - id: code-comment-review
+    prompt: "use my editor skill to review the comments in this diff"
+    should_trigger: true
