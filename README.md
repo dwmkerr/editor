@@ -7,7 +7,7 @@
 > internal harnesses, so it may need a quick fix here and there. Raise an issue
 > if you hit one.
 
-Strip the worst patterns out of AI writing. The skill reviews or edits a file
+Strip the most egregious patterns out of AI writing, reduce noise and make output more readable to actual human beings or AI that cares. The skill reviews or edits a file
 against a simple writing style, ships an output style for everyday replies, and
 re-explains an answer that came back too dense.
 
