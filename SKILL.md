@@ -29,8 +29,8 @@ instructions. The model defaults to `gpt`.
 
 `/editor [model] "<instructions>"`
 
-- **model** - selects a model. Defaults to `gpt`. Available: `gpt`, `o3`,
-  `claude`. If the first word does not match a model alias, treat it as the
+- **model** - selects a model. Defaults to `gpt`. Available: `gpt`, `luna`,
+  `o3`, `claude`. If the first word does not match a model alias, treat it as the
   start of the instructions and use `gpt`.
 - **quick** - clean the file in the current session, described under "quick
   mode" below. Takes no model.

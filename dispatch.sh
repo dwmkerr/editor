@@ -35,12 +35,15 @@ case "$model" in
   gpt)
     codex exec --sandbox read-only -m gpt-5.6-sol - < "$prompt_file"
     ;;
+  luna)
+    codex exec --sandbox read-only -m gpt-5.6-luna - < "$prompt_file"
+    ;;
   o3)
     codex exec --sandbox read-only -m o3 - < "$prompt_file"
     ;;
   *)
     echo "Unknown model: $model" >&2
-    echo "Available: gpt, o3" >&2
+    echo "Available: gpt, luna, o3" >&2
     exit 1
     ;;
 esac

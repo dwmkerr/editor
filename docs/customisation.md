@@ -27,8 +27,8 @@ alongside a checkout is gitignored.
 
 ## Models and harnesses
 
-The `case` block in `dispatch.sh` maps an alias to a command. Add a model by
-adding a branch:
+The `case` block in `dispatch.sh` maps an alias to a command. Add a branch for
+each model alias:
 
 ```sh
 sonnet)

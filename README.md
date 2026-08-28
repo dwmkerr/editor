@@ -72,14 +72,14 @@ A model that has written a file may overlook problems when reviewing its own wor
 - **Wtf mode** - `/editor wtf` re-explains the last message in the current
   session. It rewrites what was said in short, plain English, without adding to
   it.
-- **Choose a model** - `gpt` (the default) and `o3` run in a new process
-  through Codex. `claude` runs in the current session.
+- **Choose a model** - `gpt` (the default), `luna` and `o3` run in a new
+  process through Codex. `claude` runs in the current session.
 
 Every response ends with the harness and model that did the work, such as
 `Editor: Codex, dispatched as a new process, model gpt-5.6-sol`, so you can see
 what produced the response.
 
-The style rules and before-and-after examples live in `references/`. Sharing those references gives every review the same patterns to work from.
+The style rules and before-and-after examples live in `references/`. These references give each review the same criteria.
 
 ## Examples
 
@@ -94,7 +94,10 @@ The style rules and before-and-after examples live in `references/`. Sharing tho
 
 ## How it works
 
-`/editor [model] "<instructions>"` builds a prompt from the writing-style references and the target file. It passes the prompt to `dispatch.sh`, which runs the chosen model. To add a model or use a different harness, edit `dispatch.sh`, where the CLI-specific details live.
+`/editor [model] "<instructions>"` builds a prompt from the writing-style
+references and the target file. It passes that prompt to `dispatch.sh`, which
+runs the chosen model. The CLI-specific details live in `dispatch.sh`, so edit
+it to add a model or use a different harness.
 
 Machine-specific setup, such as an API key, goes in a `dispatch.local.sh` that
 `dispatch.sh` sources and the repo ignores. See
