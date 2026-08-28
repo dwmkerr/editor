@@ -69,17 +69,17 @@ A model that has written a file may overlook problems when reviewing its own wor
 - **Quick mode** - `/editor quick` cleans the file in the current session with
   whatever model is running. It fixes the clearest violations and leaves the
   rest, so use it on low-stakes copy or when you want a fast pass.
-- **Wtf mode** - `/editor wtf` re-explains the last message in plain English,
-  in the current session. It leads with the point, drops the jargon and keeps
-  the answer short. It rewrites what was said rather than adding to it.
+- **Wtf mode** - `/editor wtf` re-explains the last message in the current
+  session. It rewrites what was said in short, plain English, without adding to
+  it.
 - **Choose a model** - `gpt` (the default) and `o3` run in a new process
   through Codex. `claude` runs in the current session.
 
 Every response ends with the harness and model that did the work, such as
 `Editor: Codex, dispatched as a new process, model gpt-5.6-sol`, so you can see
-which harness and model produced it.
+what produced the response.
 
-The style rules and real before-and-after examples live in `references/`. Sharing those references gives every review the same patterns to work from.
+The style rules and before-and-after examples live in `references/`. Sharing those references gives every review the same patterns to work from.
 
 ## Examples
 
@@ -102,11 +102,10 @@ Machine-specific setup, such as an API key, goes in a `dispatch.local.sh` that
 
 ## Output styles
 
-This skill works on a file. If you want better output everywhere, change the
-output style instead. In Claude Code, run `/config` and pick an output style.
-The style is part of the settings, so it goes into the system prompt and the
-session keeps reminding the model about it, which makes it stick better than
-the same rule in `CLAUDE.md`.
+This skill works on a file. To apply the same conventions to every response,
+use an output style. In Claude Code, run `/config` and pick one. Claude Code
+puts the output style in the system prompt, which is generally more reliable
+than the same instruction in `CLAUDE.md`.
 
 Ask for the writing you want:
 
@@ -146,7 +145,7 @@ one comes back too dense, run `/editor wtf`.
   changing it.
 - **Hooks can override the style.** Anything that injects instructions on
   `UserPromptSubmit`, such as the caveman plugin, arrives after the system
-  prompt on every turn, so the model follows it instead. Caveman asks for the
+  prompt on every turn and can take precedence over it. Caveman asks for the
   clipped fragments that `references/writing-style.md` forbids, so run one or
   the other.
 
@@ -156,7 +155,7 @@ one comes back too dense, run `/editor wtf`.
 - [claude-toolkit](https://github.com/dwmkerr/claude-toolkit), the original home of this skill
 - [slides](https://github.com/dwmkerr/slides), a sibling standalone skill
 - [Opus 5 is driving people nuts. Anthropic gave the fix](https://youtu.be/HH6QqWyXJu8),
-  where the output style trick comes from
+  where the output style approach comes from
 
 ## Developer guide
 
@@ -172,8 +171,8 @@ npx skills add . --global --agent claude-code codex
 ```
 
 `npx skills` installs to whichever agents it detects - Claude Code, Codex, Cursor,
-Gemini CLI, GitHub Copilot, OpenCode and Warp among them. `--all` takes every skill
-and every agent with no prompts. Drop `--global` to install into the current project
+Gemini CLI, GitHub Copilot, OpenCode and Warp among them. `--all` installs every skill
+for every detected agent without prompting. Drop `--global` to install into the current project
 instead of the user directory.
 
 Re-run the same command to update after a change. To uninstall, run
