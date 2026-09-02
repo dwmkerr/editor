@@ -128,9 +128,9 @@ curl -o ~/.claude/output-styles/dwmkerr-editor.md \
   https://raw.githubusercontent.com/dwmkerr/editor/main/references/output-style.md
 ```
 
-Then run `/config`, select **Output style** and pick `dwmkerr editor`. The
-style is read at session start, so it applies after `/clear` or in the next
-session.
+Then run `/config`, search for `output`, and select `dwmkerr editor`. The change
+does not affect existing sessions, so run `/clear` or start a new session to
+load the style.
 
 The file sets `keep-coding-instructions: true`, which keeps Claude Code's
 built-in software engineering instructions in place while the style changes the
@@ -144,8 +144,6 @@ one comes back too dense, run `/editor wtf`.
 - **The picker saves per project.** Choosing a style in `/config` writes
   `outputStyle` to `.claude/settings.local.json` in the current directory. Put
   it in `~/.claude/settings.json` to get it everywhere.
-- **It applies at session start.** Run `/clear` or start a new session after
-  changing it.
 - **Hooks can override the style.** Anything that injects instructions on
   `UserPromptSubmit`, such as the caveman plugin, arrives after the system
   prompt on every turn and can take precedence over it. Caveman asks for the
