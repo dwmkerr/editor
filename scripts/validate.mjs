@@ -36,6 +36,19 @@ for (const ref of [
   else ok(ref);
 }
 
+const cuteLabels = 'docs/examples/cute-labels.md';
+if (!existsSync(cuteLabels)) {
+  fail(`missing ${cuteLabels}`);
+} else {
+  const text = readFileSync(cuteLabels, 'utf8');
+  const pairCount = text
+    .split('\n')
+    .filter((line) => line.startsWith('| ') && !line.startsWith('| Before ') && !line.startsWith('| --- '))
+    .length;
+  if (pairCount < 10) fail(`${cuteLabels} has ${pairCount} examples; expected at least 10`);
+  else ok(`${cuteLabels} examples`);
+}
+
 // skill-tests.yaml present.
 if (!existsSync('skill-tests.yaml')) fail('skill-tests.yaml is missing');
 else ok('skill-tests.yaml');

@@ -31,7 +31,8 @@ Good:
 > other's work.
 
 **Cute labels as pseudo-insight.** Remove labels such as "why it travels", "the
-big idea" and "why it matters". State the point directly.
+big idea" and "why it matters". State the point directly. See
+[examples and fixes](../docs/examples/cute-labels.md).
 
 **Precise counts as noise.** Omit tallies that readers can see or that will
 become stale.
