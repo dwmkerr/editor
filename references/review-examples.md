@@ -126,11 +126,7 @@ Before:
 After:
 > The main risk is that these two needs together would fill a full-time role.
 
-Before:
-> **This is the real gap.** The repo has nothing on who could be advised.
-
-After:
-> The repo does not identify who could be advised in this capacity.
+[More examples](../docs/examples/cute-labels.md)
 
 ## Numbered unordered lists
 
