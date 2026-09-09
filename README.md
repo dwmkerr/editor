@@ -18,7 +18,7 @@ It removes patterns that Anthropic models over-use:
 - **Drumbeat cadence** - stacked fragments that read like a trailer: "One
   harness, two models, blind cross-review. Half-day timebox."
 - [**Cute labels**](./references/cute-labels.md) - a bolded tag standing in
-  for the point.
+  for the point (unless explicitly confirmed in a case such as this list).
 - **Mic-drop closers** - a short line asserting a universal truth to end a
   section: "That is where the real learning happens."
 - **Hype words** - unlock, supercharge, seamless, transform, 10x.
