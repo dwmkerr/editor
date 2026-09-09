@@ -126,7 +126,7 @@ Before:
 After:
 > The main risk is that these two needs together would fill a full-time role.
 
-[More examples](../docs/examples/cute-labels.md)
+[More examples](./cute-labels.md)
 
 ## Numbered unordered lists
 

@@ -17,7 +17,7 @@ It removes patterns that Anthropic models over-use:
   "It should provoke feedback, not look finished."
 - **Drumbeat cadence** - stacked fragments that read like a trailer: "One
   harness, two models, blind cross-review. Half-day timebox."
-- [**Cute labels**](./docs/examples/cute-labels.md) - a bolded tag standing in
+- [**Cute labels**](./references/cute-labels.md) - a bolded tag standing in
   for the point.
 - **Mic-drop closers** - a short line asserting a universal truth to end a
   section: "That is where the real learning happens."

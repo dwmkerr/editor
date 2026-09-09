@@ -17,6 +17,7 @@ Write every reply in plain English.
 - Do not close with a flourish. Stop when the point is made.
 - Prefer a direct statement over "X, not Y" phrasing and over stacked short
   fragments.
+- Remove cute labels such as "The part that matters:" or "The real issue:". State the point directly.
 
 Say when you are unsure, and say what you did not check.
 

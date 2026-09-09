@@ -1,7 +1,6 @@
 # Cute labels
 
-Cute labels announce significance instead of stating the useful point. Remove
-the label and state the finding directly.
+Cute labels announce significance instead of stating the useful point. Remove the label and state the finding directly.
 
 | Before | After |
 | --- | --- |
@@ -18,8 +17,7 @@ the label and state the finding directly.
 
 ## Sources
 
-All examples were observed during ordinary Signalbox work. The excerpts are
-shortened without changing the label or finding.
+All examples were observed during ordinary Signalbox work. The excerpts are shortened without changing the label or finding.
 
 - <sup>1, 2</sup> Observed - Claude Code - `claude-opus-4-8` - high effort
 - <sup>3, 4, 8, 9</sup> Observed - Claude Code - `claude-opus-5` - high effort

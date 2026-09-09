@@ -36,7 +36,7 @@ for (const ref of [
   else ok(ref);
 }
 
-const cuteLabels = 'docs/examples/cute-labels.md';
+const cuteLabels = 'references/cute-labels.md';
 if (!existsSync(cuteLabels)) {
   fail(`missing ${cuteLabels}`);
 } else {
