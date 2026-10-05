@@ -8,7 +8,7 @@ Core rules for writing on behalf of Dave Kerr. These apply to all content regard
 
 Strip these patterns on sight.
 
-**Obnoxious humility.** Remove commentary about the model's honesty, contrition, intentions or self-correction when it adds no task information, even when it is sincere. This includes praise for the user's correction, vague admissions of fault and promises to do better. Preserve concrete errors, relevant responsibility, consequences, corrected facts, uncertainty, limitations and actions. Keep explanations when the user asks why. See [examples, fixes and ways to find it](./obnoxious-humility.md).
+**Obnoxious humility.** Remove commentary about the model's honesty, contrition, intentions or self-correction when it adds no task information, even when it is sincere. This includes praise for the user's correction, vague admissions of fault and promises to do better. Preserve concrete errors, relevant responsibility, consequences, corrected facts, uncertainty, limitations and actions. Keep explanations when the user asks why. See [examples and fixes](./obnoxious-humility.md).
 
 **X-not-Y pseudo-aphoristic.** Do not use contrast for punch when a direct statement would be clearer.
 

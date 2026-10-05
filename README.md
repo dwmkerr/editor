@@ -4,7 +4,7 @@
 
 This repo documents the most egregious patterns out of AI writing. "Claudish" in particular is terrible for this, you will probably recognise styles like this:
 
-- [**Obnoxious humility**](./references/obnoxious-humility.md) - contritness or commentary about honesty, fault or self-correction that adds no useful information: "There was a bug. **I have to be honest with you - that was my fault and the kind I least like.**"
+- [**Obnoxious humility**](./references/obnoxious-humility.md) - contrition or commentary about honesty, fault or self-correction that adds no useful information: "There was a bug. **I have to be honest with you - that was my fault and the kind I least like.**"
 - **X-not-Y** - contrast used for punch where a plain statement is clearer: "It should provoke feedback, not look finished."
 - **Drumbeat cadence** - stacked fragments that read like a trailer: "One harness, two models, blind cross-review. Half-day timebox."
 - [**Cute labels**](./references/cute-labels.md) - a bolded tag standing in for the point (unless explicitly confirmed in a case such as this list).
@@ -114,10 +114,9 @@ npx skills add . --global --agent claude-code codex --full-depth
 
 Re-run the same command to update after a change. To uninstall, run `npx skills remove --global editor wtf`.
 
-Run the checks and rebuild the hero image with:
+Rebuild the hero image with:
 
 ```sh
-make test    # structural checks
 make hero    # rebuild .github/assets/hero.gif (needs vhs)
 ```
 

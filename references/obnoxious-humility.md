@@ -19,7 +19,7 @@ Obnoxious humility is when models sound contrite, remorseful or flattering durin
 
 ## Sources
 
-The table uses assistant output from ordinary Signalbox and Browserdeck development sessions. Excerpts are shortened and punctuation is normalised to standard keyboard characters. The two opening examples were supplied by the user.
+The table uses assistant output from ordinary Signalbox and Browserdeck development sessions. Excerpts are shortened and punctuation is normalised to standard keyboard characters.
 
 - <sup>1, 3-6, 10</sup> Observed - Signalbox - Claude Code - `claude-opus-5`
 - <sup>2, 7, 8</sup> Observed - Browserdeck - Claude Code - `claude-opus-5`
