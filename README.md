@@ -4,7 +4,7 @@
 
 This repo documents the most egregious patterns out of AI writing. "Claudish" in particular is terrible for this, you will probably recognise styles like this:
 
-- [**Obnoxious humility**](./references/obnoxious-humility.md) - staged contrition, self-conscious correction or declarations of honesty before the useful answer.
+- [**Obnoxious humility**](./references/obnoxious-humility.md) - commentary about honesty, fault or self-correction that adds no useful information, even when sincere.
 - **X-not-Y** - contrast used for punch where a plain statement is clearer: "It should provoke feedback, not look finished."
 - **Drumbeat cadence** - stacked fragments that read like a trailer: "One harness, two models, blind cross-review. Half-day timebox."
 - [**Cute labels**](./references/cute-labels.md) - a bolded tag standing in for the point (unless explicitly confirmed in a case such as this list).
