@@ -2,11 +2,8 @@
   "name": "editor",
   "version": "0.1.0",
   "private": true,
-  "description": "Edit or review a file against Dave Kerr's writing style, routed through a second model",
+  "description": "Remove noisy AI writing patterns from prose and re-explain dense answers in plain English",
   "type": "module",
-  "scripts": {
-    "test": "node scripts/validate.mjs"
-  },
   "engines": {
     "node": ">=20"
   },

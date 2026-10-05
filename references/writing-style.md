@@ -1,8 +1,6 @@
 # Writing style
 
-Core rules for writing on behalf of Dave Kerr. These apply to all content
-regardless of format. Format-specific guides (social media, conference talks,
-effective shell tone) live in separate reference files and layer on top.
+Core rules for writing on behalf of Dave Kerr. These apply to all content regardless of format. Format-specific guides (social media, conference talks, effective shell tone) live in separate reference files and layer on top.
 
 ## Rules
 
@@ -10,8 +8,9 @@ effective shell tone) live in separate reference files and layer on top.
 
 Strip these patterns on sight.
 
-**X-not-Y pseudo-aphoristic.** Do not use contrast for punch when a direct
-statement would be clearer.
+**Obnoxious humility.** Remove commentary about the model's honesty, contrition, intentions or self-correction when it adds no task information, even when it is sincere. This includes praise for the user's correction, vague admissions of fault and promises to do better. Preserve concrete errors, relevant responsibility, consequences, corrected facts, uncertainty, limitations and actions. Keep explanations when the user asks why. See [examples and fixes](./obnoxious-humility.md).
+
+**X-not-Y pseudo-aphoristic.** Do not use contrast for punch when a direct statement would be clearer.
 
 Bad:
 > It should provoke feedback, not look finished.
@@ -19,8 +18,7 @@ Bad:
 Good:
 > Give stakeholders a concrete draft they can review and improve.
 
-**Drumbeat cadence.** Do not stack clipped fragments, numeric parallelism or
-symmetrical triads.
+**Drumbeat cadence.** Do not stack clipped fragments, numeric parallelism or symmetrical triads.
 
 Bad:
 > One harness, two models, two tasks, blind cross-review. Half-day timebox.
@@ -30,12 +28,9 @@ Good:
 > We run both models in the same harness across two tasks, and each reviews the
 > other's work.
 
-**Cute labels as pseudo-insight.** Remove labels such as "why it travels", "the
-big idea" and "why it matters". State the point directly. See
-[examples and fixes](./cute-labels.md).
+**Cute labels as pseudo-insight.** Remove labels such as "why it travels", "the big idea" and "why it matters". State the point directly. See [examples and fixes](./cute-labels.md).
 
-**Precise counts as noise.** Omit tallies that readers can see or that will
-become stale.
+**Precise counts as noise.** Omit tallies that readers can see or that will become stale.
 
 Bad:
 > Three deliverables, in priority order:
@@ -43,17 +38,11 @@ Bad:
 Good:
 > Produce the following deliverables in priority order.
 
-**Hype words.** Remove game-changing, revolutionary, unlock, unleash,
-supercharge, elevate, transform, master when used as hype, effortlessly,
-seamlessly, cutting-edge, next-level, 10x, ultimate, definitive and secret
-sauce.
+**Hype words.** Remove game-changing, revolutionary, unlock, unleash, supercharge, elevate, transform, master when used as hype, effortlessly, seamlessly, cutting-edge, next-level, 10x, ultimate, definitive and secret sauce.
 
-**"through-line" and "arc".** Do not use generic structural metaphors. Use
-"thread" or describe the connection directly.
+**"through-line" and "arc".** Do not use generic structural metaphors. Use "thread" or describe the connection directly.
 
-**Mic-drop.** A short declarative sentence that asserts a universal truth to
-close a section. The rhythm does the persuading and the claim is usually
-unsupported. Ground it in first person and make the claim specific.
+**Mic-drop.** A short declarative sentence that asserts a universal truth to close a section. The rhythm does the persuading and the claim is usually unsupported. Ground it in first person and make the claim specific.
 
 Bad:
 > The second is the one that teaches you.
@@ -73,8 +62,7 @@ Bad:
 Good:
 > Warmth should come from true, specific details.
 
-**"wedge".** Do not use this word without explicit permission. Use "opening",
-"way in", "start", "lever" or "gap".
+**"wedge".** Do not use this word without explicit permission. Use "opening", "way in", "start", "lever" or "gap".
 
 **Special characters.** Use only characters available on a standard keyboard.
 
@@ -97,17 +85,13 @@ Good:
 
 ### Discouraged
 
-**Redundant numbering.** Numbering adds noise when layout already makes the
-items distinct. Use it when order or later reference matters.
+**Redundant numbering.** Numbering adds noise when layout already makes the items distinct. Use it when order or later reference matters.
 
-**Overly formal academic tone.** Write for a colleague and use technical terms
-only when they improve precision.
+**Overly formal academic tone.** Write for a colleague and use technical terms only when they improve precision.
 
-**Excessive exclamation marks.** Use at most one earned exclamation mark per
-section.
+**Excessive exclamation marks.** Use at most one earned exclamation mark per section.
 
-**Full stops on headings and subtitles.** Headings and slide subtitles read
-better without trailing full stops.
+**Full stops on headings and subtitles.** Headings and slide subtitles read better without trailing full stops.
 
 ### Preferred
 
@@ -146,11 +130,11 @@ Bad:
 - Specify the language on code blocks.
 - Include only relevant code; add comments only where the logic is not obvious.
 - Bullet points for unordered items, numbered lists for sequential steps.
+- Do not hard-wrap markdown. Write each paragraph as one line and let the editor or renderer wrap it. Reflowed paragraphs produce noisy diffs.
 
 ## Metaphors and framing
 
-- Concrete technical metaphors are fine: "agents compile intent into code",
-  "code is assembly language", "the LLM is the compiler".
+- Concrete technical metaphors are fine: "agents compile intent into code", "code is assembly language", "the LLM is the compiler".
 - Frame industry trends through others' work first, then add your perspective.
 - Do not use abstract metaphors that do not map precisely to the technical concept.
 - "One thing is clear" is fine. "This changes everything" is not.
