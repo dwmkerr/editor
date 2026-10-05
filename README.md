@@ -1,8 +1,6 @@
-<img src="./.github/assets/review-table.png" alt="A /editor review in Claude Code: ten findings in a table of line, problem and fix" width="100%">
-
 # editor
 
-This repo documents the most egregious patterns out of AI writing. "Claudish" in particular is terrible for this, you will probably recognise styles like this:
+This repo documents the most egregious patterns out of AI writing and can help with copy-editing or just making general converation less vomituous. "Claudish" in particular is terrible for these patterns. You will probably recognise patterns like this:
 
 - [**Obnoxious humility**](./references/obnoxious-humility.md) - contrition or commentary about honesty, fault or self-correction that adds no useful information: "There was a bug. **I have to be honest with you - that was my fault and the kind I least like.**"
 - **X-not-Y** - contrast used for punch where a plain statement is clearer: "It should provoke feedback, not look finished."
@@ -17,6 +15,8 @@ You can point your agent at this project to help it reduce noise and make output
 It is important to note that by default if you are using Claude Code the skill will try to route through Codex + GPT (which seems to apply a plain and simple writing style more effectively, Claude models seem to have these styles really baked in). All of this behaviour can be customised.
 
 My suggestion is to read through the skill, play with it, then fork it or write your own. The rules in `references/` are mine, so treat them as a starting point for yours. Contributions are welcome when they help everyone, such as a new harness integration in `dispatch.sh` or a guideline that applies regardless of who is writing.
+
+<img src="./.github/assets/review-table.png" alt="A /editor review in Claude Code: ten findings in a table of line, problem and fix" width="100%">
 
 ## Before and after example
 
