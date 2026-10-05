@@ -1,5 +1,5 @@
 # Rebuild with: vhs scripts/hero.tape   (brew install vhs)
-Output site/assets/hero.gif
+Output .github/assets/hero.gif
 
 Set Shell bash
 Set FontSize 15

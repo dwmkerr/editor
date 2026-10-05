@@ -22,9 +22,9 @@ tests:
     prompt: "/editor quick"
     should_trigger: true
 
-  - id: wtf-mode
-    prompt: "/editor wtf"
-    should_trigger: true
+  - id: negative-wtf
+    prompt: "/wtf"
+    should_trigger: false
 
   - id: negative-code
     prompt: "Write a function to parse JSON"

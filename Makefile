@@ -7,4 +7,4 @@ test: ## Run project checks
 	@npm test
 
 hero: ## Rebuild the animated hero image
-	@./scripts/build-hero-gif.sh
+	@vhs scripts/hero.tape

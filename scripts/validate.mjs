@@ -4,20 +4,26 @@ let failures = 0;
 const fail = (msg) => { console.error(`✖ ${msg}`); failures++; };
 const ok = (msg) => console.log(`✔ ${msg}`);
 
-// SKILL.md must exist with name + description frontmatter.
-if (!existsSync('SKILL.md')) {
-  fail('SKILL.md is missing');
+// The editor skill must exist with name + description frontmatter.
+const editorSkillPath = 'SKILL.md';
+if (!existsSync(editorSkillPath)) {
+  fail(`${editorSkillPath} is missing`);
 } else {
-  const skill = readFileSync('SKILL.md', 'utf8');
+  const skill = readFileSync(editorSkillPath, 'utf8');
   const fm = skill.match(/^---\n([\s\S]*?)\n---/);
   if (!fm) fail('SKILL.md has no frontmatter block');
   else {
-    if (!/\nname:\s*editor\b/.test('\n' + fm[1])) fail('SKILL.md frontmatter missing name: editor');
-    else ok('SKILL.md name');
-    if (!/\ndescription:\s*\S/.test('\n' + fm[1])) fail('SKILL.md frontmatter missing description');
-    else ok('SKILL.md description');
+    if (!/\nname:\s*editor\b/.test('\n' + fm[1])) fail(`${editorSkillPath} frontmatter missing name: editor`);
+    else ok(`${editorSkillPath} name`);
+    if (!/\ndescription:\s*\S/.test('\n' + fm[1])) fail(`${editorSkillPath} frontmatter missing description`);
+    else ok(`${editorSkillPath} description`);
   }
 }
+
+// The standalone WTF skill must also be installable.
+const wtfSkillPath = 'skills/wtf/SKILL.md';
+if (!existsSync(wtfSkillPath)) fail(`${wtfSkillPath} is missing`);
+else ok(wtfSkillPath);
 
 // dispatch.sh must exist and be executable.
 if (!existsSync('dispatch.sh')) fail('dispatch.sh is missing');
@@ -52,6 +58,9 @@ if (!existsSync(cuteLabels)) {
 // skill-tests.yaml present.
 if (!existsSync('skill-tests.yaml')) fail('skill-tests.yaml is missing');
 else ok('skill-tests.yaml');
+
+if (!existsSync('skills/wtf/skill-tests.yaml')) fail('skills/wtf/skill-tests.yaml is missing');
+else ok('skills/wtf/skill-tests.yaml');
 
 if (failures) {
   console.error(`\n${failures} check(s) failed`);

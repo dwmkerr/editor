@@ -4,8 +4,7 @@ These before-and-after pairs show common antipatterns and how to fix them.
 
 ## X-not-Y pseudo-aphoristic
 
-This common pattern uses contrast for punch when a direct instruction would be
-clearer.
+This common pattern uses contrast for punch when a direct instruction would be clearer.
 
 Before:
 > It should provoke feedback, not look finished.
@@ -57,8 +56,7 @@ After:
 
 ## Mic-drop
 
-A short declarative that closes a section by asserting a universal truth. The
-rhythm does the persuading and the claim is usually unsupported.
+A short declarative that closes a section by asserting a universal truth. The rhythm does the persuading and the claim is usually unsupported.
 
 Before:
 > The second is the one that teaches you.
@@ -87,8 +85,7 @@ After:
 
 ## Drumbeat cadence
 
-Drumbeat cadence stacks verbless fragments to create an artificial rhythm.
-Each item sounds punchy alone but the stack reads like a trailer.
+Drumbeat cadence stacks verbless fragments to create an artificial rhythm. Each item sounds punchy alone but the stack reads like a trailer.
 
 Before:
 > - **Strategy** - a standing seat in the leadership group.
