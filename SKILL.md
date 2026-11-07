@@ -61,7 +61,7 @@ These steps cover review and edit mode. For `quick`, use the section above.
 1. **Identify** the target file from the instructions or conversation context.
 
 2. **Write a prompt file.** Write it to the scratchpad directory. Include:
-   - The content of `writing-style.md`, `review-examples.md`, `cute-labels.md` and `obnoxious-humility.md` from this skill's `references/` directory.
+   - The content of `writing-style.md`, `review-examples.md`, `cute-labels.md`, `obnoxious-humility.md` and `needless-surprise.md` from this skill's `references/` directory.
    - The content of `code-style.md` when the target is code (source files, or prose that documents code such as comments in a diff).
    - The content of `effective-shell-style.md` only when the instructions mention that tone.
    - The content of the target file. For code targets, include the code itself, never extracted comment lines alone: judging a comment needs the code it annotates in view.
