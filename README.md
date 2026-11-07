@@ -3,6 +3,7 @@
 This repo documents the most egregious patterns out of AI writing and can help with copy-editing or just making general converation less vomituous. "Claudish" in particular is terrible for these patterns. You will probably recognise patterns like this:
 
 - [**Obnoxious humility**](./references/obnoxious-humility.md) - contrition or commentary about honesty, fault or self-correction that adds no useful information: "There was a bug. **I have to be honest with you - that was my fault and the kind I least like.**"
+- [**Needless surprise**](./references/needless-surprise.md) - hardly needs explaining, its classic Claude-ish: "I found the issue - **and the cause might surprise you.**"
 - **X-not-Y** - contrast used for punch where a plain statement is clearer: "It should provoke feedback, not look finished."
 - **Drumbeat cadence** - stacked fragments that read like a trailer: "One harness, two models, blind cross-review. Half-day timebox."
 - [**Cute labels**](./references/cute-labels.md) - a bolded tag standing in for the point (unless explicitly confirmed in a case such as this list).

@@ -10,6 +10,8 @@ Strip these patterns on sight.
 
 **Obnoxious humility.** Remove commentary about the model's honesty, contrition, intentions or self-correction when it adds no task information, even when it is sincere. This includes praise for the user's correction, vague admissions of fault and promises to do better. Preserve concrete errors, relevant responsibility, consequences, corrected facts, uncertainty, limitations and actions. Keep explanations when the user asks why. See [examples and fixes](./obnoxious-humility.md).
 
+**Needless surprise.** Remove framing that presents an ordinary finding as a reveal: "the cause might surprise you", "not what you would expect", "plot twist", "good news and bad news", "interestingly", "turns out", or a "Not quite." opener. State the finding first. Keep the contrast only when the evidence overturns an expectation the reader actually stated, and then give the finding before the overturned expectation. See [examples and fixes](./needless-surprise.md).
+
 **X-not-Y pseudo-aphoristic.** Do not use contrast for punch when a direct statement would be clearer.
 
 Bad:
