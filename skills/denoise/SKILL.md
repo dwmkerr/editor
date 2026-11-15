@@ -25,8 +25,8 @@ Do not add facts, caveats, advice, structure or new work. Do not change technica
 
 **Writing patterns**
 
-- Obnoxious humility: commentary on the writer's honesty, fault, intentions or self-correction ("I have to be straight with you", "That was my fault", "You are right and I was too cautious"). Keep the concrete error, its consequence and the fix.
-- Cute labels: a bolded or colon-ended tag that announces significance ("The catch:", "Why it matters:", "The bit that matters:"). Keep the point that follows it.
+- Obnoxious humility: commentary on the writer's honesty, fault, intentions or self-correction. Keep the concrete error, its consequence and the fix. Read `references/obnoxious-humility.md` for examples.
+- Cute labels: a bolded or colon-ended tag that announces significance. Keep the point that follows it. Read `references/cute-labels.md` for examples.
 - X-not-Y contrast used for punch ("It should provoke feedback, not look finished"). State the positive claim directly. Keep the contrast when the rejected option is real information.
 - Drumbeat cadence: stacked fragments and symmetrical triads ("One issue. Two PRs. Bot writes, you review."). Join them into a plain sentence.
 - Mic-drop closers: a short line asserting a general truth to end a section ("That is where the real learning happens"). Delete it.

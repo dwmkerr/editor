@@ -118,10 +118,12 @@ npx skills add . --global --agent claude-code codex --full-depth
 
 Re-run the same command to update after a change. To uninstall, run `npx skills remove --global editor wtf denoise`.
 
-Rebuild the hero image with:
+Skills in `skills/` carry copies of the references they use, because each skill installs on its own. After editing `references/`, refresh the copies. CI also does this on every push and commits the result.
 
 ```sh
-make hero    # rebuild .github/assets/hero.gif (needs vhs)
+make refs          # copy shared references into skills/
+make check-refs    # fail if the copies are stale
+make hero          # rebuild .github/assets/hero.gif (needs vhs)
 ```
 
 ## See also
