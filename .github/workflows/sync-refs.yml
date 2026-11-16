@@ -1,0 +1,39 @@
+name: sync-refs
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "references/**"
+      - "skills/**"
+      - "scripts/sync-refs.sh"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-refs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy shared references into skills
+        run: make refs
+
+      # Pushes made with GITHUB_TOKEN do not trigger workflows, so this commit cannot loop.
+      - name: Commit any changed copies
+        run: |
+          if [ -z "$(git status --porcelain -- 'skills/*/references/*')" ]; then
+            echo "Skill references are up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'skills/*/references/*'
+          git commit -m "chore: sync skill references"
+          git push

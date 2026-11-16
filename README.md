@@ -56,13 +56,17 @@ The style rules and before-and-after examples live in `references/`. These refer
 
 ## WTF skill
 
-`/wtf` is a separate skill that re-explains the previous message in short, plain English without adding anything. The `--full-depth` install option discovers both `editor` and `wtf`.
+`/wtf` is a separate skill that re-explains the previous message in short, plain English without adding anything. The `--full-depth` install option discovers `editor`, `wtf` and `denoise`.
 
 > "The bifurcation of authoritative and recursive resolution semantics, compounded by TTL-governed cache persistence, produces temporally heterogeneous DNS convergence."
 
 becomes
 
 > DNS changes do not take effect everywhere at once. DNS servers keep copies for a fixed time, so some still have the old record after others have the new one.
+
+## Denoise skill
+
+`/denoise` strips the patterns above from the previous message, pasted text or a file, along with commentary and filler: process narration, restated questions, signposting, closing summaries, generic offers and intensifiers. It deletes before it rewrites and keeps every fact, number, caveat and action. `/denoise path/to/file.md` writes the result back to the file.
 
 ## Customisation
 
@@ -113,12 +117,14 @@ npx skills add . --global --agent claude-code codex --full-depth
 
 `npx skills` installs to whichever agents it detects - Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode and Warp among them. `--all` installs every skill for every detected agent without prompting. Drop `--global` to install into the current project instead of the user directory.
 
-Re-run the same command to update after a change. To uninstall, run `npx skills remove --global editor wtf`.
+Re-run the same command to update after a change. To uninstall, run `npx skills remove --global editor wtf denoise`.
 
-Rebuild the hero image with:
+Skills in `skills/` carry copies of the references they use, because each skill installs on its own. After editing `references/`, refresh the copies. CI also does this on every push and commits the result.
 
 ```sh
-make hero    # rebuild .github/assets/hero.gif (needs vhs)
+make refs          # copy shared references into skills/
+make check-refs    # fail if the copies are stale
+make hero          # rebuild .github/assets/hero.gif (needs vhs)
 ```
 
 ## See also
